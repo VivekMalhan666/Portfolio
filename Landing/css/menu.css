@@ -1,0 +1,139 @@
+/* Body */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* navbar */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 100;
+    transition: 0.6%;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header #toggle
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+header .hamburger{
+    width: 30px;
+    position: relative;
+}
+header .hamburger,
+header .hamburger::before,
+header .hamburger::after{
+    height: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.50,-0.05,0.60,0.53);
+    border-radius: 2px;
+}
+header .hamburger::before,
+header .hamburger::after{
+    content: '';
+    width: 15px;
+    position: absolute;
+}
+header .hamburger::before{
+    transform: translateY(-10px);
+    transform-origin: right;
+}
+header .hamburger::after{
+    transform: translateY(10px);
+    right: 0;
+    transform-origin: left;
+}
+.change header .hamburger::before{
+    transform: translate(0) rotate(450deg);
+}
+.change header .hamburger::after{
+    transform: translate(0) rotate(450deg);
+}
+.change header .hamburger{
+    transform:rotate(45deg);
+}
+/* Menu Contents */
+#navigation
+{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background:darkturquoise;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+#navigation.active
+{
+    right: 0;
+}
+#navigation ul
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#navigation ul li
+{
+    list-style: none;
+}
+#navigation ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+@media (max-width:767px){
+    header
+    {
+        padding-left: 30px;
+    }
+    header .logo
+    {
+        padding-left: 0px;
+        margin-left: 0;
+    }
+    header #toggle
+    {
+        padding: 20px 10px;
+        color: #fff;
+        width: 40px;
+    }
+    #navigation
+    {
+        width: 250px;
+    }
+    #navigation ul li a
+    {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+}

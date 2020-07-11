@@ -96,6 +96,7 @@
 .content
 {
     min-width:500px ;
+    margin: 100px;
 }
 .content h2
 {
@@ -256,6 +257,7 @@
         position: relative;
         top:0px;
         right: 0px;
+        left:15px;
         padding-right: 0px;
         flex-direction: column;
     }

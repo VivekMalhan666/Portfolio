@@ -21,7 +21,7 @@
         </div>
     </div>
      <div id="menu">
-        <header>
+        <header class="nav-area">
             <a href="#" class="logo"></a>
             <div id="toggle" onclick="toggle()">
                 <span class="hamburger"></span>
@@ -74,6 +74,28 @@
             <li><a href="../Contact  us/contact-us.html">Contact</a></li>
         </ul>
     </div>
+    <script>
+        $(function() {
+            var scroll = $(document).scrollTop();
+            var navHeight = $('#toggle').outerHeight();
+            $(window).scroll(function(){
+                var scrolled=$(document).scrollTop();
+                if(scrolled>navHeight){
+                    $('#toggle').addClass('animate');
+                }else{
+                    $('#toggle').removeClass('animate')
+                }
+
+                if(scrolled>scroll){
+                    $('#toggle').removeClass('sticky');
+                }else{
+                    $('#toggle').addClass('sticky')
+                }
+                scroll=$(document).scrollTop();
+
+            })
+        });
+    </script>
     <script type="text/javascript" src="../Landing/js/parallax.js"></script>
     <script type="text/javascript" src="../Landing/js/preloading.js"></script>
     <script type="text/javascript" src="../Landing/js/toggle.js"></script>

@@ -156,7 +156,7 @@ section img{
 .content p
 {
     font-size: 1.6em;
-    color: #868686;
+    color: white;
     font-weight: 300;
 }
 .container{
@@ -165,7 +165,7 @@ section img{
     padding-left: 80px;
     padding-right: 20px;
     font-size: 1.6em;
-    color: #868686;
+    color: white;
     display: table-cell;
     justify-content: center;
     align-items: center;

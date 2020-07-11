@@ -19,17 +19,14 @@
 	    </div>
 	 </div>
         <div id="menu">
-            <header>
-                <a href="#" class="logo"></a>
+            <header class="nav-area">
+                <a href="#" class="logo">Hola</a>
                 <div id="toggle" onclick="toggle()">
                     <span class="hamburger"></span>
                 </div>
             </header>
         </div>
         <section class="banner" id="sec">
-            <header>
-                <a href="#" class="logo">Hola</a>
-            </header>
             <div class="content">
                 <h2>Hello,<br> I'm <span>Vivek Malhan</span></h2>
                 <p>Web Developer</p>
@@ -50,6 +47,18 @@
                 <li><a href="../Contact  us/contact-us.html">Contact</a></li>
             </ul>
         </div>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function(){
+                var currentScroll=window.pageYOffset;
+                if(prevScrollpos>currentScroll){
+                    document.getElementById('#menu').style.top="0";
+                }
+                else{
+                    document.getElementById('#menu').style.top="-50px"
+                }
+            }
+        </script>
         <script type="text/javascript" src="js/preloading.js"></script>
         <script type="text/javascript" src="js/toggle.js"></script>
         <script type="text/javascript" src="particles.js/particles.min.js"></script>

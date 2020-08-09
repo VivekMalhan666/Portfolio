@@ -96,7 +96,7 @@
 .content
 {
     min-width:500px ;
-    margin: 100px;
+    margin: 10px;
 }
 .content h2
 {
@@ -238,7 +238,7 @@
     }
     .banner h2
     {
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
     .banner .content a
     {
@@ -265,8 +265,5 @@
     {
         margin: initial;
         margin-right: 10px;
-    }
-    #particles-js{
-        display: none !important;
     }
 }

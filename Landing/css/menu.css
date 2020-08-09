@@ -14,20 +14,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.1);
+    background-color:rgba(0, 0, 0, 0.822);
     display: flex;
     justify-content: space-between;
     padding: 40px 100px;
     z-index: 100;
     transition: 0.6%;
-}
-#toggle.animate{
-    top:-100px
-    z-index:0;
-}
-.sticky{
-    top: 0px;
-    z-index: 100;
 }
 .nav-area .logo
 {
@@ -44,7 +36,7 @@
 {
     position: relative;
     width: 40px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
 }
 .nav-area .hamburger{
@@ -136,7 +128,7 @@
     {
         padding: 20px 10px;
         color: #fff;
-        width: 40px;
+        width: 30px;
     }
     #navigation
     {

@@ -14,10 +14,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.822);
+    background-color:rgba(0, 0, 0, 0.753);
     display: flex;
     justify-content: space-between;
-    padding: 40px 100px;
+    padding: 30px 100px 0px;
     z-index: 100;
     transition: 0.6%;
 }

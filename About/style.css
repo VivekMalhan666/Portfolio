@@ -95,6 +95,12 @@ section img{
     color: white;
     font-weight: 300;
 }
+.content ul{
+    color: azure;
+    position: relative;
+    left: 20px;
+    font-size: 1.2em;
+}
 
 @media (max-width:767px){
     .banner
